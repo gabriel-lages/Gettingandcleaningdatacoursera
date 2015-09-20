@@ -14,7 +14,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ##Files and Execution
 
-* **Data Set**:
-* **Codebook.md**:
-* **run_analysis.R**:
+* **Data Set:**
+* **Codebook.md:**
+* **run_analysis.R:**
 
