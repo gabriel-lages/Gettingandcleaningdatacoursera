@@ -17,4 +17,5 @@ A full description is available at the website where the data was obtained:
 * **Data Set:**
 * **Codebook.md:**
 * **run_analysis.R:**
+* **tidy.csv:**
 
