@@ -12,5 +12,9 @@ For this assignment we will use the dataset "Human Activity Recognition Using Sm
 A full description is available at the site where the data was obtained:
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+##Files and Execution
 
+* *Data Set*:
+* *Codebook.md*:
+* *run_analysis.R*:
 
