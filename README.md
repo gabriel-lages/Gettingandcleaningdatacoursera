@@ -7,5 +7,8 @@ This repository contains the R code for the assignment of the Course "Getting an
 
 ## Dataset
 
+For this assignment we will use this dataset:
+
+*Human Activity Recognition Using Smartphones
 
 
