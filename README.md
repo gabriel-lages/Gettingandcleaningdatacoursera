@@ -1,2 +1,2 @@
-# Gettingandcleaningdatacoursera
+# Getting and Cleaning Data Coursera
 
