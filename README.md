@@ -1,3 +1,3 @@
 # Getting and Cleaning Data Coursera
-This is a repo created by Gabriel Lages for the Course "Getting and Cleaning Data"
+This is a repo created by Gabriel Lages for the Course "Getting and Cleaning Data" (09/20/2015)
 
