@@ -25,5 +25,5 @@ A full description is available at the website where the data was obtained:
  4. Appropriately labels the data set with descriptive variable names. 
  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each     activity and each subject.
 
-* **tidy.csv:** The output of the course project is stored in the file ``` tidy.csv```
+* **tidy.csv:** The output of the course project has been stored in the file ``` tidy.csv```
 
