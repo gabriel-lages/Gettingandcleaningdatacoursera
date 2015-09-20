@@ -16,7 +16,7 @@ A full description is available at the website where the data was obtained:
 
 * **Data Set:** The Data Set used in this project has been stored in ```UCI HAR Dataset/``` Directory
 
-* **Codebook.md:**
+* **Codebook.md:** The file ```Codebook.md``` contains the Code Book of the project that desceribes the variables, the data, and any transformations or work that you performed to clean up the data
 
 * **run_analysis.R:** The file ```run_analysis.R``` contains the script of the project and does the following:
  1. Merges the training and the test sets to create one data set.
