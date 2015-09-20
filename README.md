@@ -14,7 +14,7 @@ A full description is available at the website where the data was obtained:
 
 ##Files and Execution
 
-* **Data Set:**
+* **Data Set:** The Data Set of that has been used in this project has been stored in ```UCI HAR Dataset/``` Directory
 
 * **Codebook.md:**
 
