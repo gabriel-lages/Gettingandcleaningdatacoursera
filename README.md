@@ -15,12 +15,15 @@ A full description is available at the website where the data was obtained:
 ##Files and Execution
 
 * **Data Set:**
+
 * **Codebook.md:**
+
 * **run_analysis.R:** The file ```run_analysis.R``` contains the script of the project and does the following:
  1. Merges the training and the test sets to create one data set.
  2. Extracts only the measurements on the mean and standard deviation for each measurement. 
  3. Uses descriptive activity names to name the activities in the data set
  4. Appropriately labels the data set with descriptive variable names. 
  5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each     activity and each subject.
+
 * **tidy.csv:** The output of the course project is stored in the file ``` tidy.csv```
 
