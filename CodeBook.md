@@ -24,7 +24,7 @@ This is a code book that describes the variables, the data, and any transformati
 
 **Data Set Downloading Date:** 09/20/2015
 
-###Information about the Data:
+###Information about the Data and variables:
 
 - ```features_info.txt```: Contains information about the variables used on the feature vector.
 - ```features.txt```: Contains a list with all features.
@@ -34,8 +34,6 @@ This is a code book that describes the variables, the data, and any transformati
 - ```test/X_test.txt```: Contains the Test Data.
 - ```test/y_test.txt```: Contains the Test labels.
 - ```train/subject_train.txt```: Contains a list where each row identifies the subject who performed the activity.
-
-###Information about the Variables:
 
 ### Transformations in the Dataset
 
