@@ -35,4 +35,53 @@ This is a code book that describes the variables, the data, and any transformati
 - ```test/y_test.txt```: Contains the Test labels.
 - ```train/subject_train.txt```: Contains a list where each row identifies the subject who performed the activity.
 
-###Information about the Data:
+###Information about the Variables:
+
+### Transformations in the Dataset
+
+All the transformations have been made running a R script.
+
+The data set has been downloaded in the [UCI Repository](http://archive.ics.uci.edu/ml/machine-learning-databases/00240/UCI%20HAR%20Dataset.zip)
+
+* The "downloader" R package was used to do it.
+```
+fileurl<- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+download(fileurl, dest="dataset.zip", mode="wb") 
+```
+*  The unzip function was used to extract the zip file in the directory.
+```
+unzip("dataset.zip")
+```
+* The read.table function was used to read the files.
+```
+x_test<-read.table("./UCI HAR Dataset/test/X_test.txt", header = FALSE)
+y_test<-read.table("./UCI HAR Dataset/test/y_test.txt", header = FALSE)
+Sub_test<-read.table("./UCI HAR Dataset/test/subject_test.txt", header = FALSE)
+x_train<-read.table("./UCI HAR Dataset/train/X_train.txt", header = FALSE)
+y_train<-read.table("./UCI HAR Dataset/train/y_train.txt", header = FALSE)
+Sub_train<-read.table("./UCI HAR Dataset/train/subject_train.txt", header = FALSE)
+activities <- read.table("./UCI HAR Dataset/activity_labels.txt",header=FALSE,colClasses="character")
+features <- read.table("./UCI HAR Dataset/features.txt",header=FALSE,colClasses="character")
+```
+* cbind and rbind functions were used to merge the files.
+```
+db_test<-cbind(x_test,y_test)
+db_test<-cbind(db_test,Sub_test)
+db_train<-cbind(x_train,y_train)
+db_train<-cbind(db_train,Sub_train)
+db_complete<-rbind(db_test,db_train)
+```
+* The sapply function were used to calculate the measures for each field.
+```
+db_complete_mean<-sapply(db_complete,mean,na.rm=TRUE)
+db_complete_sd<-sapply(db_complete,sd,na.rm=TRUE)
+```
+* The "data.table" R package was used to do create the final data_table
+```
+dt_complete <- data.table(db_complete)
+tidy_file<-dt_complete[,lapply(.SD,mean),by="Activity,Subject"]
+```
+* The write.table function was used to create the .txt file.
+```
+write.table(tidy_file,file="tidy.txt",sep=",",row.names=FALSE)
+```
